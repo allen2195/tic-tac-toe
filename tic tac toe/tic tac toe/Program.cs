@@ -12,10 +12,10 @@ namespace tic_tac_toe
             int turns = 9;
             char player = 'X';
             char[,] board = new char[3, 3];
-            BoardEx(board);
+            GameBoard(board);
 
-
-
+           Console.WriteLine("Welcome to tic-tac-toe!");
+ 
             while (true)
             {
                 Console.Clear();
@@ -31,65 +31,10 @@ namespace tic_tac_toe
                 {
                     Console.Clear();
                     Print(board);
-                    Console.WriteLine("Game over");
+                    Console.WriteLine("Game over!");
                     break;
                 }
-               /* if (player == board[0, 0] && player == board[0, 1] && player == board[0, 2])
-                {
-                    Console.Clear();
-                    Print(board);
-                    Console.WriteLine("Very cool! Player '" + player + "' won!");
-                    break;
-                }
-                else if (player == board[1, 0] && player == board[1, 1] && player == board[1, 2])
-                {
-                    Console.Clear();
-                    Print(board);
-                    Console.WriteLine("Very cool! Player '" + player + "' won!");
-                    break;
-                }
-                else if (player == board[2, 0] && player == board[2, 1] && player == board[2, 2])
-                {
-                    Console.Clear();
-                    Print(board);
-                    Console.WriteLine("Very cool! Player '" + player + "' won!");
-                    break;
-                }
-                else if (player == board[0, 0] && player == board[1, 0] && player == board[2, 0])
-                {
-                    Console.Clear();
-                    Print(board);
-                    Console.WriteLine("Very cool! Player '" + player + "' won!");
-                    break;
-                }
-                else if (player == board[0, 1] && player == board[1, 1] && player == board[2, 1])
-                {
-                    Console.Clear();
-                    Print(board);
-                    Console.WriteLine("Very cool! Player '" + player + "' won!");
-                    break;
-                }
-                else if (player == board[0, 2] && player == board[1, 2] && player == board[2, 2])
-                {
-                    Console.Clear();
-                    Print(board);
-                    Console.WriteLine("Very cool! Player '" + player + "' won!");
-                    break;
-                }
-                else if (player == board[0, 0] && player == board[1, 1] && player == board[2, 2])
-                {
-                    Console.Clear();
-                    Print(board);
-                    Console.WriteLine("Very cool! Player '" + player + "' won!");
-                    break;
-                }
-                else if (player == board[0, 2] && player == board[1, 1] && player == board[2, 0])
-                {
-                    Console.Clear();
-                    Print(board);
-                    Console.WriteLine("Very cool! Player '" + player + "' won!");
-                    break;
-                }*/
+             
                 if (player == 'X')
                 {
                     player = 'O';
@@ -99,16 +44,14 @@ namespace tic_tac_toe
                     player = 'X';
                 }
 
-
-
             }
-            Console.WriteLine("To exit the game just press any button");
+            Console.WriteLine(" Press any key to exit the game ");
             Console.ReadKey();
 
 
 
         }
-        static void BoardEx(char[,] board)
+        static void GameBoard (char[,] board)
         {
             for (int row = 0; row < 3; row++)
             {
