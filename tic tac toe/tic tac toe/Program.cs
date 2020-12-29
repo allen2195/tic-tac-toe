@@ -14,11 +14,11 @@ namespace tic_tac_toe
             char[,] board = new char[3, 3];
             GameBoard(board);
 
-           Console.WriteLine("Welcome to tic-tac-toe!");
  
             while (true)
             {
                 Console.Clear();
+                Console.WriteLine("Welcome to tic-tac-toe!");
                 Print(board);
                 Console.WriteLine("Player '" + player + "' is playing!");
                 Console.WriteLine("Select the row");
